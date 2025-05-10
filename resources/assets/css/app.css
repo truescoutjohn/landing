@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --breakpoint-xs: 25rem;
+  /*--color-shark-400: oklch(30.23% 0.015 252.34);
+  --color-pampas-400: oklch(95.71% 0.007 67.74);
+  --color-whiskey-400: oklch(0.74 0.0797 67.98); */
+  --font-inter: 'Inter', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --color-alabastar-400: oklch(0.98 0 0);
+  --color-alabastar-50: oklch(0.98 0 0 / 0.5);
+  --color-bg-400: oklch(0 0 0 / 53.33%);
+}
+
+#app {
+  background: var(--color-black);
+}
