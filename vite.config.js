@@ -47,7 +47,7 @@ export default defineConfig({
     //   clientPort: 443, // Порт HTTPS
     // },
     cors: {
-      origin: 'https://bold-mildly-kite.ngrok-free.app', // Разрешить запросы с домена LocalTunnel
+      origin: 'http://localhost:8000', // Разрешить запросы с домена LocalTunnel
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       allowedHeaders: ['Content-Type'],
     },

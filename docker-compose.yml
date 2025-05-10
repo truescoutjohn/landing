@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile
     container_name: laravel_app
@@ -22,7 +22,7 @@ services:
       redis:
         condition: service_started
     healthcheck:
-      test: ["CMD", "php", "artisan", "queue:work", "--once"]
+      test: ['CMD', 'php', 'artisan', 'queue:work', '--once']
       interval: 30s
       timeout: 10s
       retries: 3
@@ -30,7 +30,7 @@ services:
   webserver:
     image: nginx:alpine
     ports:
-      - "8080:80"
+      - '8000:80'
     volumes:
       - ./:/var/www/html
       - ./docker/nginx:/etc/nginx/conf.d
@@ -47,19 +47,19 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${DB_USERNAME:-laravel_user} -d ${DB_DATABASE:-laravel}"]
+      test: ['CMD-SHELL', 'pg_isready -U ${DB_USERNAME:-laravel_user} -d ${DB_DATABASE:-laravel}']
       interval: 5s
       timeout: 5s
       retries: 5
     ports:
-      - "5432:5432"
+      - '5432:5432'
 
   redis:
     image: redis:7-alpine
     volumes:
       - redis_data:/data
     healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
+      test: ['CMD', 'redis-cli', 'ping']
       interval: 30s
       timeout: 10s
       retries: 3
@@ -69,11 +69,11 @@ services:
     container_name: laravel_node
     volumes:
       - ./:/var/www/html
-      - /var/www/html/node_modules 
+      - /var/www/html/node_modules
     working_dir: /var/www/html
     command: sh -c "npm install && npm run dev"
     ports:
-      - "5173:5173" 
+      - '5173:5173'
     depends_on:
       - app
 
