@@ -7,6 +7,6 @@
 <body>
   <div id="app">
   </div>
-  <script src="http://3175229.pt582771.web.hosting-test.net/build/assets/app-C6mNdPb7.js"></script>
+  <script src="http://3175229.pt582771.web.hosting-test.net/app-C6mNdPb7.js"></script>
 </body>
 </html>
