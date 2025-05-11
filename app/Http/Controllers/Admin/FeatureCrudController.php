@@ -28,7 +28,7 @@ class FeatureCrudController extends CrudController
         CRUD::setModel(\App\Models\Feature::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/feature');
         CRUD::setEntityNameStrings('feature', 'features');
-        CRUD::setIcon('la la-cogs');
+        // CRUD::setIcon('la la-cogs');
     }
 
     /**

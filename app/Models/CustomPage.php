@@ -30,16 +30,17 @@ class CustomPage extends BasePage
         $this->save2($value);
         $this->save3($value);
         $this->save4($value);
+        
     }
 
-    private function save1($value) {
+    private function save1(&$value) {
         $extras = $this->extras ?? [];
         if (is_array($value)) {
             if (isset($value['hero_bg'])) {
                 $path = $value['hero_bg']->store('uploads', 'public');
 
                 $extras['hero_bg'] = $path;
-                unset($value['hero_bg']);
+                $value['hero_bg'] = $path;
             }
 
             $extras = array_merge($extras, $value);
@@ -48,7 +49,7 @@ class CustomPage extends BasePage
         $this->attributes['extras'] = json_encode($extras);
     }
 
-    private function save2($value) {
+    private function save2(&$value) {
         $extras = $this->extras ?? [];
 
         if (is_array($value)) {
@@ -56,7 +57,7 @@ class CustomPage extends BasePage
                 $path = $value['about_image']->store('uploads', 'public');
 
                 $extras['about_image'] = $path;
-                unset($value['about_image']);
+                $value['about_image'] = $path;
             }
 
             $extras = array_merge($extras, $value);
@@ -65,7 +66,7 @@ class CustomPage extends BasePage
         $this->attributes['extras'] = json_encode($extras);
     }
 
-    private function save3($value) {
+    private function save3(&$value) {
         $extras = $this->extras ?? [];
         
         if (is_array($value)) {
@@ -73,7 +74,7 @@ class CustomPage extends BasePage
                 $path = $value['sale_logo']->store('uploads', 'public');
 
                 $extras['sale_logo'] = $path;
-                unset($value['sale_logo']);
+                $value['sale_logo'] = $path;
             }
 
             $extras = array_merge($extras, $value);
@@ -82,7 +83,7 @@ class CustomPage extends BasePage
         $this->attributes['extras'] = json_encode($extras);
     }
 
-    private function save4($value) {
+    private function save4(&$value) {
         $extras = $this->extras ?? [];
         
         if (is_array($value)) {
@@ -90,7 +91,7 @@ class CustomPage extends BasePage
                 $path = $value['logo']->store('uploads', 'public');
 
                 $extras['logo'] = $path;
-                unset($value['logo']);
+                $value['logo'] = $path;
             }
 
             $extras = array_merge($extras, $value);
