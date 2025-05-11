@@ -1,0 +1,18 @@
+{
+  "resources/assets/imgs/salesBg.png": {
+    "file": "assets/images/salesBg-C8-dVw1y.png",
+    "src": "resources/assets/imgs/salesBg.png"
+  },
+  "resources/js/app.ts": {
+    "file": "assets/app-C6mNdPb7.js",
+    "name": "app",
+    "src": "resources/js/app.ts",
+    "isEntry": true,
+    "css": [
+      "assets/app-B0UCj5Lw.css"
+    ],
+    "assets": [
+      "assets/images/salesBg-C8-dVw1y.png"
+    ]
+  }
+}
