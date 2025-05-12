@@ -1,7 +1,7 @@
 <template>
   <div class="pt-[78px] pb-[39px]" id="portfolio">
     <div
-      class="mx-auto px-4 xl:px-[60px] xl:max-w-[75%] font-montserrat text-alabastar-400 relative"
+      class="mx-auto px-4 xl:px-[30px] xl:max-w-[75%] font-montserrat text-alabastar-400 relative"
     >
       <div class="flex flex-wrap justify-between items-center mb-[43px]">
         <h2

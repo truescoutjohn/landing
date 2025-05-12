@@ -1,12 +1,12 @@
 <template>
   <div id="services">
     <div
-      class="grid grid-cols-1 md:grid-cols-3 px-4 xl:px-[60px] pb-[60px] mx-auto xl:max-w-[75%] text-montserrat text-alabastar-400"
+      class="grid grid-cols-1 md:grid-cols-3 px-4 xl:px-[30px] pb-[60px] mx-auto xl:max-w-[75%] text-montserrat text-alabastar-400"
     >
       <div class="left-column">
-        <h3 class="text-[35px] xl:text-[48px] font-semibold">{{ service_title }}</h3>
+        <h3 class="text-[35px] xl:text-[48px] font-semibold uppercase">{{ service_title }}</h3>
         <button
-          class="cursor-pointer mb-4 px-6 py-3 bg-gradient-to-r from-[#7f39a9] via-[#b0346b] to-[#dd2f30] hover:bg-pink-600 hover:shadow-pink-500/50 hover:shadow-lg transition rounded text-sm font-semibold uppercase"
+          class="cursor-pointer mb-4 px-6 py-3 xl:px-[45px] xl:py-[14px] bg-gradient-to-r from-[#7f39a9] via-[#b0346b] to-[#dd2f30] hover:bg-pink-600 hover:shadow-pink-500/50 hover:shadow-lg transition rounded text-[16px] font-semibold uppercase"
         >
           {{ service_button_title }}
         </button>

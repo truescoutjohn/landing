@@ -1,9 +1,11 @@
 <template>
   <div>
     <div
-      class="mx-auto px-4 xl:px-[60px] py-[60px] xl:pb-[292px] xl:max-w-[75%] text-alabastar-400 text-montserrat"
+      class="mx-auto px-4 xl:px-[30px] py-[60px] xl:pb-[292px] xl:max-w-[75%] text-alabastar-400 text-montserrat"
     >
-      <h2 class="text-[35px] md:text-[48px] text-center uppercase">{{ price_title }}</h2>
+      <h2 class="text-[35px] md:text-[48px] xl:leading-[59px] text-center font-semibold uppercase">
+        {{ price_title }}
+      </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
         <div
           v-for="price in prices"
@@ -34,7 +36,7 @@
             <ul class="space-y-3">
               <li
                 v-for="item in price.description.split('\n')"
-                class="flex items-start text-[20px]"
+                class="flex items-start mb-[12px] text-[20px]"
               >
                 <span
                   class="mr-2 bg-gradient-to-r from-[#7f39a9] via-[#b0346b] to-[#dd2f30] bg-clip-text text-transparent"

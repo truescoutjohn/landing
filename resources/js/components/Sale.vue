@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="px-4 xl:px-[60px] mx-auto xl:max-w-[75%] font-montserrat text-alabastar-400">
+    <div class="px-4 xl:px-[30px] mx-auto xl:max-w-[75%] font-montserrat text-alabastar-400">
       <div class="item grid grid-cols-1 sm:grid-cols-3 items-center gap-12 px-[24px] py-[32px]">
         <div class="left-column col-span-2">
           <h4

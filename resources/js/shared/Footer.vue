@@ -2,7 +2,7 @@
   <div class="overlay relative">
     <div class="mx-auto xl:max-w-[75%]">
       <main
-        class="grid grid-cols-1 sm:grid-cols-2 gap-12 justify-between px-4 xl:px-[60px] py-10"
+        class="grid grid-cols-1 sm:grid-cols-2 gap-12 justify-between px-4 xl:px-[30px] py-10"
         id="contacts"
       >
         <!-- Левая часть -->
@@ -21,7 +21,7 @@
             <div class="text-[22px] xl:text-[32px] font-medium">INFO@RVVS.US</div>
             {{ form_content }}
             <button
-              class="mt-4 px-6 py-3 bg-gradient-to-r from-[#7f39a9] via-[#b0346b] to-[#dd2f30] hover:bg-pink-600 hover:shadow-pink-500/50 hover:shadow-lg transition rounded text-sm font-semibold uppercase"
+              class="cursor-pointer mb-4 px-6 py-3 xl:px-[45px] xl:py-[14px] bg-gradient-to-r from-[#7f39a9] via-[#b0346b] to-[#dd2f30] hover:bg-pink-600 hover:shadow-pink-500/50 hover:shadow-lg transition rounded text-[16px] font-semibold uppercase"
             >
               {{ footer_button_title }}
             </button>
@@ -30,11 +30,13 @@
 
         <!-- Правая часть (форма) -->
         <div
-          class="bg-transparent p-8 rounded-lg shadow-lg w-full max-w-[670px] border border-gray-700"
+          class="right-column bg-transparent p-8 rounded-lg shadow-lg w-full max-w-[670px] border"
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <h2 class="text-white text-2xl font-bold mb-6">DISCUSS THE PROJECT</h2>
+          <h2 class="text-white text-[32px] font-semibold mb-6 xl:leading-[120%] uppercase">
+            DISCUSS THE PROJECT
+          </h2>
 
           <form class="space-y-6" @submit.prevent="handleSubmit">
             <input
@@ -91,12 +93,12 @@
 
       <!-- Футер -->
       <footer
-        class="text-gray-400 text-xs py-6 px-4 xl:px-[60px] flex flex-wrap gap-4 justify-between items-center"
+        class="text-gray-400 text-xs py-6 px-4 xl:px-[60px] flex flex-wrap gap-4 justify-between items-center text-[14px] text-montserrat"
       >
         <div class="mb-2 md:mb-0">{{ copyright_text }}</div>
         <div class="flex items-center space-x-4 mb-2 md:mb-0">
-          <a :href="facebook_url" class="hover:text-white transition">Facebook</a>
-          <a :href="instagram_url" class="hover:text-white transition">Instagram</a>
+          <a :href="facebook_url" class="hover:text-white transition uppercase">Facebook</a>
+          <a :href="instagram_url" class="hover:text-white transition uppercase">Instagram</a>
         </div>
         <div
           class="bg-gradient-to-r from-[#7f39a9] via-[#b0346b] to-[#dd2f30] bg-clip-text text-transparent font-semibold"
@@ -174,5 +176,13 @@ const { copyright_text, form_title, form_content, company_name, facebook_url, in
   /* background-repeat: no-repeat; */
   /* transform: rotateX(180deg); */
   z-index: -1;
+}
+
+.right-column {
+  background: linear-gradient(225deg, rgba(82, 82, 82, 0.15), rgba(62, 62, 62, 0.15) 100%);
+}
+
+.border {
+  border: 1px solid #555;
 }
 </style>

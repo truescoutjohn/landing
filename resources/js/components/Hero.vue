@@ -6,7 +6,7 @@
       <button
         class="button-wrapper inline-flex justify-center items-center cursor-pointer p-0.5 mb-[12px] xl:mb-[24px]font-medium"
       >
-        <div class="button flex gap-4 px-4 sm:px-[24px] py-2 sm:py-[16px]">
+        <div class="button flex gap-4 px-4 sm:px-[36px] py-2 sm:py-[14px]">
           <svg
             width="27.000000"
             height="24.001953"
@@ -71,19 +71,21 @@
       </button>
       <img :src="`/storage/${hero_bg}`" alt="heroBg" class="bg" />
       <h1
-        class="mb-[40px] xl:mb-[24px] text-[22px] sm:text-[40px] xl:text-[80px] text-center uppercase"
+        class="mb-[40px] xl:mb-[24px] text-[22px] sm:text-[40px] xl:text-[80px] text-center uppercase xl:leading-[98px]"
       >
         {{ hero_title }}
       </h1>
-      <p class="mx-auto mb-[30px] xl:mb-[48px] font-medium text-[20px] text-center max-w-[602px]">
+      <p
+        class="mx-auto mb-[30px] xl:mb-[48px] font-medium text-[20px] text-center max-w-[602px] xl:leading-[24px]"
+      >
         {{ hero_content }}
       </p>
       <button
-        class="mb-[100px] xl:mb-[141px] cursor-pointer inline-block mx-auto bg-white py-[12px] px-[32px] rounded-[6px] text-black hover:opacity-90"
+        class="mb-[100px] xl:mb-[141px] cursor-pointer inline-block mx-auto font-[Inter] bg-white py-[12px] px-[32px] rounded-[6px] text-black hover:opacity-90"
       >
         GET IN TOUCH
       </button>
-      <p class="mb-[40px]">Scroll to discover</p>
+      <p class="mb-[40px] uppercase font-medium text-[14px]">Scroll to discover</p>
     </div>
     <div
       class="absolute bottom-[20px] left-1/2 -translate-x-1/2 animate-bounce inline-flex justify-center items-center h-16 w-16 rounded-full border"
