@@ -2,7 +2,7 @@
   <div
     class="relative z-10 pb-[24px] pt-[140px] xl:pt-[187px] min-h-screen text-alabastar-400 font-montserrat"
   >
-    <div class="mx-auto px-4 xl:px-[60px] font-bold xl:max-w-[75%] text-center">
+    <div class="mx-auto px-4 xl:px-[60px] font-bold xl:max-w-[1380px] text-center">
       <button
         class="button-wrapper inline-flex justify-center items-center cursor-pointer p-0.5 mb-[12px] xl:mb-[24px]font-medium"
       >

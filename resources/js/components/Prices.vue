@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="mx-auto px-4 xl:px-[30px] py-[60px] xl:pb-[292px] xl:max-w-[75%] text-alabastar-400 text-montserrat"
+      class="mx-auto px-4 xl:px-[30px] py-[60px] xl:pb-[292px] xl:max-w-[1380px] text-alabastar-400 text-montserrat"
     >
       <h2 class="text-[35px] md:text-[48px] xl:leading-[59px] text-center font-semibold uppercase">
         {{ price_title }}

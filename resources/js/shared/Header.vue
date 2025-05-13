@@ -2,7 +2,7 @@
   <header class="header fixed top-0 left-0 z-50 w-full overflow-hidden border-b border-gray-400/10">
     <div class="w-full bg-bg-400 font-[Inter]">
       <div
-        class="flex justify-between items-center px-4 xl:px-[30px] py-[18px] mx-auto xl:max-w-[75%]"
+        class="flex justify-between items-center px-4 xl:px-[30px] py-[18px] mx-auto xl:max-w-[1380px]"
       >
         <a href="/"><img :src="`/storage/${logo}`" alt="logo" /></a>
         <BurgerMenu :header_button_title="header_button_title" />

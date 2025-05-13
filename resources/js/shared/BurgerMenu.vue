@@ -2,7 +2,7 @@
   <div class="relative z-50">
     <button
       @click="toggleMenu"
-      class="cursor-pointer p-2 rounded-lg transition-colors 2xl:hidden"
+      class="cursor-pointer p-2 rounded-lg transition-colors xl:hidden"
       aria-label="Toggle menu"
     >
       <MenuIcon color="oklch(0.98 0 0)" class="w-10 h-10" />

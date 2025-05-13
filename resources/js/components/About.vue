@@ -1,6 +1,6 @@
 <template>
   <div class="pt-[90px] xl:pt-[119px] text-alabastar-400 font-montserrat">
-    <div class="mx-auto px-4 xl:px-[30px] text-center xl:max-w-[75%]">
+    <div class="mx-auto px-4 xl:px-[30px] text-center xl:max-w-[1380px]">
       <button
         class="button-wrapper inline-flex justify-center items-center cursor-pointer p-0.5 mb-[24px] xl:mb-[43px] font-medium"
       >

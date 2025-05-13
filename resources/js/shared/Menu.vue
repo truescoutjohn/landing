@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden 2xl:flex justify-between items-center">
+  <div class="hidden xl:flex justify-between items-center">
     <nav class="flex justify-between gap-2 items-center mr-[121px] font-inter text-alabastar-400">
       <a
         :href="item.link"

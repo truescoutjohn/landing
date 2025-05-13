@@ -1,6 +1,6 @@
 <template>
   <div class="overlay relative">
-    <div class="mx-auto xl:max-w-[75%]">
+    <div class="mx-auto xl:max-w-[1380px]">
       <main
         class="grid grid-cols-1 sm:grid-cols-2 gap-12 justify-between px-4 xl:px-[30px] py-10"
         id="contacts"
