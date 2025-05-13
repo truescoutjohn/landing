@@ -4,12 +4,12 @@
     "src": "resources/assets/imgs/salesBg.png"
   },
   "resources/js/app.ts": {
-    "file": "assets/app-Bw2ckZqC.js",
+    "file": "assets/app-BaGUtcVa.js",
     "name": "app",
     "src": "resources/js/app.ts",
     "isEntry": true,
     "css": [
-      "assets/app-CdX2PR3L.css"
+      "assets/app-ugfgmEx1.css"
     ],
     "assets": [
       "assets/images/salesBg-C8-dVw1y.png"
